@@ -1,0 +1,16 @@
+body {
+	text-align: center;
+	font-family: 'Nunito', sans-serif;
+	font-size: 3vw;
+	color: #253237;
+}
+
+#logo {
+	width: 80%;
+	margin-top: 20vh;
+}
+
+p{
+	padding: 0;
+	line-height: 0.5;
+}
