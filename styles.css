@@ -1,16 +1,35 @@
 body {
 	text-align: center;
 	font-family: 'Nunito', sans-serif;
-	font-size: 3vw;
+	font-size: 15pt;
+	width: 75%;
+	margin: 0 auto;
 	color: #253237;
 }
 
 #logo {
-	width: 80%;
+	width: 75%;
 	margin-top: 20vh;
 }
 
-p{
+.contact {
+	font-size: 20pt;
 	padding: 0;
-	line-height: 0.5;
+	line-height: 1;
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+		text-align: center;
+		font-family: 'Nunito', sans-serif;
+		font-size: 10pt;
+		width: 75%;
+		margin: 0 auto;
+		color: #253237;
+	}
+    .contact {
+		font-size: 15pt;
+		padding: 0;
+		line-height: 1;
+	}
 }
