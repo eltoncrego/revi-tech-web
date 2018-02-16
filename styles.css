@@ -24,7 +24,7 @@ h2 i {
 main.full {
   min-height: calc(100vh - 32pt);
   padding-top: 32pt;
-  width: 70%;
+  width: 75%;
 }
 
 #header {
@@ -47,6 +47,16 @@ main.full {
   height: auto;
 }
 
+nav ul {
+  list-style: none;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #253237;
+  font-size: 10pt;
+}
+
 #content {
   flex: 10;
   padding: 16pt 32pt;
@@ -59,7 +69,10 @@ main.full {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+
+  text-align: center;
+  margin: 32pt 0 0 0;
 }
 
 #contact {
@@ -76,7 +89,7 @@ main.full {
 	font-size: 15pt;
 	color: white;
   border-style: none;
-  padding: 8pt 16pt 8pt 16pt;
+  padding: 16pt 32pt;
   border-radius: 32pt;
 
   transition: all .1s cubic-bezier(.17,.67,.83,.67);
@@ -96,7 +109,7 @@ main.full {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .team-card{
@@ -104,7 +117,7 @@ main.full {
   min-height: 32pt;
   border-radius: 8pt;
   padding: 8pt 8pt 16pt 8pt;
-  margin: 24pt 4pt;
+  margin: 12pt 8pt;
   background-color: white;
 
   display: flex;
@@ -176,6 +189,16 @@ main.full {
 @media (max-width: 640px){
   main.full {
     width: 95%;
+  }
+
+  #desc {
+    align-items: center;
+    text-align: left;
+    margin: 0pt;
+  }
+
+  #card-wrapper{
+    justify-content: center;
   }
 }
 
