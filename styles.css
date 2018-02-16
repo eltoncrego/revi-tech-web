@@ -211,7 +211,7 @@ nav ul li a{
 
   #desc {
     align-items: flex-start;
-    text-align: left;
+    /* text-align: center; */
     margin: 0;
   }
 
