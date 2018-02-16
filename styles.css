@@ -16,18 +16,25 @@ body {
   align-items: center;
 }
 
+h2 i {
+  color: #9FD356;
+  font-style: normal;
+}
+
 main.full {
-  height: calc(100vh - 32pt);
+  min-height: calc(100vh - 32pt);
   padding-top: 32pt;
   width: 70%;
 }
 
 #header {
+  width: calc(100% - 32pt);
+  padding: 0pt 32pt;
+
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 16pt 32pt;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .site-logo-link {
@@ -36,7 +43,7 @@ main.full {
 }
 
 .site-logo {
-  width: 128pt;
+  width: 176pt;
   height: auto;
 }
 
@@ -60,7 +67,7 @@ main.full {
   justify-content: center;
   align-items: center;
 
-  margin-top: 32pt;
+  margin: 32pt 0pt;
 }
 
 #contact button{
@@ -72,13 +79,107 @@ main.full {
   padding: 8pt 16pt 8pt 16pt;
   border-radius: 32pt;
 
-  box-shadow: 2pt 2pt 30pt rgba(159, 211, 86, .2)
+  transition: all .1s cubic-bezier(.17,.67,.83,.67);
+}
+
+#contact button:hover{
+  transform: scale(1.1);
+  box-shadow: 4pt 4pt 30pt rgba(159, 211, 86, .2)
 }
 
 @media (max-width: 640px){
   main.full {
     width: 85%;
   }
+}
+
+.team {
+  margin: 32pt 0pt;
+}
+
+#card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.team-card{
+  min-width: 32pt;
+  min-height: 32pt;
+  border-radius: 8pt;
+  padding: 8pt 8pt 16pt 8pt;
+  margin: 24pt 3pt;
+  border-style: solid;
+  border-width: 1pt;
+  border-color: rgba(37,50,55,0.1);
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  transition: all .1s cubic-bezier(.17,.67,.83,.67);
+  z-index: 0;
+
+  text-decoration: none;
+  color: #253237;
+}
+
+.team-card:hover{
+  transform: scale(1.1);
+  box-shadow: 4pt 4pt 30pt rgba(37,50,55,0.1);
+  z-index: 10;
+}
+
+.team-card h3{
+  margin: 16pt 0 0 0;
+  width: 128pt;
+  text-align: center;
+}
+
+.team-card p{
+  margin: 0;
+  opacity: 0.5;
+  width: 128pt;
+  text-align: center;
+}
+
+.team-avi {
+  width: 128pt;
+  height: 128pt;
+  border-radius: 6pt;
+  background-size: cover;
+}
+
+#elton {
+  background-image: url("src/team/elton.jpg");
+}
+
+#will {
+  background-image: url("src/team/will.jpg");
+}
+
+#connick {
+  background-image: url("src/team/connick.jpg");
+}
+
+#payam {
+  background-image: url("src/team/payam.jpg");
+}
+
+#ryan {
+  background-image: url("src/team/ryan.jpg");
+}
+
+#alec {
+  background-image: url("src/team/alec.jpg");
+}
+
+#teeny {
+  background-image: url("src/team/teeny.jpg");
 }
 
 footer {
