@@ -87,12 +87,6 @@ main.full {
   box-shadow: 4pt 4pt 30pt rgba(159, 211, 86, .2);
 }
 
-@media (max-width: 640px){
-  main.full {
-    width: 85%;
-  }
-}
-
 .team {
   margin: 32pt 0pt;
 }
@@ -182,6 +176,12 @@ main.full {
   background-image: url("src/team/teeny.jpg");
 }
 
+@media (max-width: 640px){
+  main.full {
+    width: 95%;
+  }
+}
+
 footer {
   font-size: 8pt;
   background-color: rgba(37,50,55,0.05);
@@ -190,6 +190,7 @@ footer {
   color: rgba(37,50,55,0.5);
 
   display: flex;
+  flex-wrap: wrap-reverse;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
