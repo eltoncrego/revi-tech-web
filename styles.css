@@ -23,7 +23,6 @@ body {
   height: 100vh;
   z-index: -1;
   background-image: url("./src/site_background.svg");
-  /* background-position: 50% 50%; */
   background-size: cover;
   opacity: 0.2;
 }
