@@ -1,35 +1,80 @@
+html {
+  vertical-align: baseline;
+  margin: 0px;
+  padding: 0px;
+  border-width: 0px;
+}
+
 body {
-	text-align: center;
 	font-family: 'Nunito', sans-serif;
 	font-size: 15pt;
-	width: 75%;
-	margin: 0 auto;
 	color: #253237;
+
+  display: flex;
+  justify-content: center;
 }
 
-#logo {
-	width: 75%;
-	margin-top: 20vh;
+main.full {
+  height: calc(100vh - 32pt);
+  padding-top: 32pt;
+  width: 70%;
 }
 
-.contact {
-	font-size: 20pt;
-	padding: 0;
-	line-height: 1;
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 16pt 32pt;
 }
 
-@media only screen and (max-width: 768px) {
-	body {
-		text-align: center;
-		font-family: 'Nunito', sans-serif;
-		font-size: 10pt;
-		width: 75%;
-		margin: 0 auto;
-		color: #253237;
-	}
-    .contact {
-		font-size: 15pt;
-		padding: 0;
-		line-height: 1;
-	}
+.site-logo-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-logo {
+  width: 128pt;
+  height: auto;
+}
+
+#content {
+  flex: 10;
+  padding: 16pt 32pt;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 32pt;
+}
+
+#contact button{
+  background-color: #B8E986;
+  font-family: 'Nunito', sans-serif;
+	font-size: 15pt;
+	color: white;
+  border-style: none;
+  padding: 8pt 16pt 8pt 16pt;
+  border-radius: 32pt;
+
+  box-shadow: 2pt 2pt 30pt rgba(159, 211, 86, .2)
+}
+
+@media (max-width: 640px){
+  main.full {
+    width: 85%;
+  }
 }
