@@ -18,8 +18,8 @@ body {
 
 #bg {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: -5vh;
+  left: -5vw;
   width: calc(100%+10vw);
   height: 110vh;
   z-index: -1;
