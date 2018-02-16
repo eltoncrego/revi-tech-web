@@ -88,13 +88,13 @@ main.full {
 }
 
 .team {
-  margin: 32pt 0pt;
+  margin: 16pt 0pt;
 }
 
 #card-wrapper {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
 }
@@ -104,10 +104,7 @@ main.full {
   min-height: 32pt;
   border-radius: 8pt;
   padding: 8pt 8pt 16pt 8pt;
-  margin: 24pt 3pt;
-  border-style: solid;
-  border-width: 1pt;
-  border-color: rgba(37,50,55,0.1);
+  margin: 24pt 4pt;
   background-color: white;
 
   display: flex;
