@@ -20,8 +20,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100vh;
+  width: calc(100%+10vw);
+  height: 110vh;
   z-index: -1;
   background-image: url("./src/site_background.svg");
   background-position: 50% 50%;
