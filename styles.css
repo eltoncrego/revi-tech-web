@@ -83,24 +83,35 @@ main.full {
 
 footer {
   font-size: 8pt;
-  background-color: #253237;
-  color: white;
-  padding: 16pt 32pt 16pt 32pt;
-  width: calc(100% - 64pt);
+  background-color: rgba(37,50,55,0.05);
+  padding: 12pt 64pt 12pt 64pt;
+  width: calc(100% - 128pt);
+  color: rgba(37,50,55,0.5);
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  border-top-style: solid;
+  border-top-color: rgba(37,50,55,0.1);
+  border-top-width: 1pt;
 }
 
 #footer-left{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
 }
 
-i {
-  color: white;
+footer p {
+  padding: 0;
+  margin: 0;
+}
+
+footer a{
+  font-size: 15pt;
+  color: rgba(37,50,55,0.5);
+  padding: 2pt 4pt;
 }
