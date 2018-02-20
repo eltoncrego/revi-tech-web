@@ -36,6 +36,7 @@ h2 i {
 main.full {
   min-height: calc(100vh - 32pt);
   padding-top: 32pt;
+  padding-bottom: 32pt;
   width: 75%;
 }
 
@@ -57,16 +58,6 @@ main.full {
 .site-logo {
   width: 176pt;
   height: auto;
-}
-
-nav ul {
-  list-style: none;
-}
-
-nav ul li a{
-  text-decoration: none;
-  color: #253237;
-  font-size: 10pt;
 }
 
 #content {
