@@ -198,6 +198,7 @@ main.full {
   #header {
     width: calc(100% - 64pt);
     padding: 0pt 32pt;
+    justify-content: center;
   }
 
   #desc {

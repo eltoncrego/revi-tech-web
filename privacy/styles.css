@@ -80,6 +80,7 @@ a {
   #header {
     width: calc(100% - 64pt);
     padding: 0pt 32pt;
+    justify-content: center;
   }
 
   #footer-right{
